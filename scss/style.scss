@@ -1,5 +1,4 @@
 body{
-	background: #000;
 	font-family: 'Roboto', sans-serif;
 }
 *, *:after, *:before{
@@ -130,6 +129,85 @@ input{
 	animation: mouse-move 2s infinite;
 }
 
+.section-second{
+	padding: 70px 0;
+}
+.services__title{
+	font-size: 36px;
+	font-weight: 300;
+	padding-bottom: 20px;
+}
+.horizontal__line{
+	max-width: 360px;
+	height: 1px;
+	background: #19b5fe;
+}
+.services{
+	padding-top: 36px;
+	.row{
+		padding-bottom: 15px;
+	}
+}
+.services-description{
+	h4{
+		font-size: 28px;
+		font-weight: 300;
+		color: #19b5fe;
+	}
+	p{
+		font-size: 18px;
+		font-weight: 100;
+		color: #464646;
+		margin: 20px 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px){
+	.services{
+		padding-top: 36px;
+		.row{
+			padding-bottom: 30px;
+		}
+	}
+	.services-description{
+		h4{
+			font-size: 24px;
+			font-weight: 300;
+			color: #19b5fe;
+		}
+		p{
+			font-size: 16px;
+			font-weight: 100;
+			color: #464646;
+			margin: 20px 0;
+		}
+	}
+}
 
 
 @media screen and (max-width: 768px){
@@ -170,13 +248,26 @@ input{
 }
 @media (min-width: 320px) and (max-width: 572px){
 	.section-first .title {
-    	font-size: 20px;
+    	font-size: 19px;
 	}
 	.section-first .subtitle {
-    	font-size: 17px;
+    	font-size: 14px;
 	}
 	.input-text{
 		display: none;
+	}
+	.services-description{
+		h4{
+			font-size: 20px;
+			font-weight: 300;
+			color: #19b5fe;
+		}
+		p{
+			font-size: 14px;
+			font-weight: 100;
+			color: #464646;
+			margin: 15px 0;
+		}
 	}
 }
 

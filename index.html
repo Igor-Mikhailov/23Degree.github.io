@@ -52,9 +52,11 @@
 			</div>
 			<div class="row">
 				<div class="input-form col-md-10 mx-auto d-sm-flex d-none justify-content-center">
-					<input class="mr-sm-2 mr-0" type="text" placeholder="Ваше имя" />
-					<input type="text" placeholder="E-mail" />
-					<input class="ml-sm-2 ml-0" type="text" placeholder="Номер телефона" />
+					<form action="send.php" method="post">
+						<input class="mr-sm-2 mr-0" name="fio" type="text" placeholder="Ваше имя" required/>
+						<input type="text" name="email" placeholder="E-mail" required/>
+						<input class="ml-sm-2 ml-0" name="phone" type="text" placeholder="Номер телефона" required/>
+					</form>
 				</div>
 			</div>
 			<div class="row">
@@ -69,11 +71,58 @@
 			</div>
 			<div class="row">
 				<div class="col-1 mx-auto text-center">
-					<a href=""><img class="mouse" src="img/mouse.png" alt=""></a>
+					<a href="#services"><img class="mouse" src="img/mouse.png" alt=""></a>
 				</div>
 			</div>
 
 		</div>
 	</section>
+	<section class="section-second services" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mx-auto text-center">
+					<h2 class="services__title">Наши услуги</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 mx-auto text-center">
+					<div class="horizontal__line mx-auto"></div>
+				</div>
+			</div>
+			<div class="services">
+				<div class="row align-items-center">
+					<div class="col-md-6 col-12 services-description text-center text-md-left pb-5 order-2 order-md-1">
+						<h4 class="services__dezign">Дизайн интерьера</h4>
+						<p class="services__dezign-description">Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении</p>
+						<button class="form__click">Оставить заявку!</button>
+					</div>
+					<div class="col-md-6 col-12 text-center order-1 order-md-2 pb-3 pb-md-0">
+						<img src="img/services-img-1.jpg" alt="" class="services__img img-fluid">
+					</div>
+				</div>
+				<div class="row align-items-center d-flex">
+					<div class="col-md-6 col-12 services-description order-2 text-center text-md-right pb-5">
+						<h4 class="services__dezign">Дизайн экстерьера</h4>
+						<p class="services__dezign-description">Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+					</div>
+					<div class="col-md-6 col-12 order-1 pb-3 pb-md-0">
+						<img src="img/services-img-2.jpg" alt="" class="services__img img-fluid">
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-md-6 col-12 services-description text-center text-md-left pb-5 order-2 order-md-1">
+						<h4 class="services__dezign">Визуализация</h4>
+						<p class="services__dezign-description">Услуга, направленная на разработку дизайна прилегающих элементов зданий, а также дизайн самих зданий, позволяющая обеспечить удобство людей при нахождении на территории</p>
+					</div>
+					<div class="col-md-6 col-12 text-center order-1 order-md-2 pb-3">
+						<img src="img/services-img-3.jpg" alt="" class="services__img img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
